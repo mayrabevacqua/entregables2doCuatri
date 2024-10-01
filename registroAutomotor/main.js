@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var registroAutomotor_1 = require("./registroAutomotor");
+var vehiculo1 = new registroAutomotor_1.registroAutomotor("Auto", "ABC123", 2022, "MarcaX", 2022, true);
+var vehiculo2 = new registroAutomotor_1.registroAutomotor("Moto", "XYZ789", 2023, "MarcaY", 2023, true);
+vehiculo1.agregarVehiculo("Auto", "ABC123", 2022, "MarcaX", 2022);
+vehiculo2.agregarVehiculo("Moto", "XYZ789", 2023, "MarcaY", 2023);
+vehiculo1.modificarVehiculo("Auto Modificado", "ABC1234", 2023, "MarcaZ", 2023);
+vehiculo1.darDeBaja();
+console.log("Estado del veh\u00EDculo 1: ".concat(vehiculo1.getVehiculo(), ", Patente: ").concat(vehiculo1.getPatente(), ", Est\u00E1 activo: ").concat(vehiculo1.getestaActivo()));
+console.log("Estado del veh\u00EDculo 2: ".concat(vehiculo2.getVehiculo(), ", Patente: ").concat(vehiculo2.getPatente(), ", Est\u00E1 activo: ").concat(vehiculo2.getestaActivo()));
